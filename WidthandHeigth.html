@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<title>顯示你的畫面大小</title>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+
+<button onclick="myFunction()">Try try 看</button><br><br>
+<a href="http://nchume5566.github.io/WTF/006%E8%AA%AA%E6%98%8E.pdf" rel="nofollow">說明</a>
+<body onload="myFunction()">
+<body onresize="myFunction()">
+<script>
+function myFunction()
+{
+var iw=window.innerWidth;
+var ih=window.innerHeight;
+var ow=window.outerWidth;
+var oh=window.outerHeight;
+x=document.getElementById("demo1");
+y=document.getElementById("demo2");
+x.innerHTML="innerWidth: " + iw + " innerHeigth: " + ih ;
+y.innerHTML="outerWidth: " + ow + " outerHeigth: " + oh ;
+
+}
+</script>
+</body>
+</html>
