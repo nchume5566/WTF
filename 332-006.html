@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body onresize="myFunction()">
+<script type="text/javascript">
+<!--
+
+var w=window.innerWidth;
+var h=window.innerHeight;
+var wo=window.outerWidth;
+var ho=window.outerHeight;
+ 
+ if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth,
+      viewportheight = window.innerHeight
+ }
+ 
+ 
+ 
+document.write('<p>網頁開啟時的視窗大小&nbsp&nbsp;&nbsp;&nbsp;Width:'+w+'&nbsp;&nbsp;&nbsp;&nbsp;Height:'+h+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OuterWidth:'+wo+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OuterHeigth:'+ho+'</p>');
+//-->
+</script><p>按下按鈕來顯示現在的視窗大小</p>
+
+<button onclick="myFunction()">檢視現在網頁大小</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+
+
+<script>
+function myFunction()
+{
+var w=window.innerWidth;
+var h=window.innerHeight;
+var wo=window.outerWidth;
+var ho=window.outerHeight;
+
+x=document.getElementById("demo");
+y=document.getElementById("demo2");
+
+x.innerHTML="Width: " + w + "&nbsp;&nbsp;&nbsp;&nbsp;Heigth: " + h;
+y.innerHTML="OuterWidth: " + wo + " &nbsp;&nbsp;&nbsp;OuterHeigth: " + ho ;
+}
+</script>
+
+</body>
+</html>
