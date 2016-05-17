@@ -1,0 +1,16 @@
+<html>
+<body>
+<form name="form1" method="post" action="chkpid.asp" onSubmit="return false;">
+請輸入IMEI：
+<input name="pid" type="text" id="pid" size="20" onKeyUp="this.form.pid.value = this.form.pid.value.toUpperCase();">
+<input type="button" name="button" value="送出" onclick="javascript: inspector();">
+<input type="reset" name="reset" value="清除">
+</body>
+<script>
+    function inspector()
+    {
+        alert("正確");
+    }
+    
+    </script>
+</html>
