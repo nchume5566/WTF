@@ -1,6 +1,8 @@
-﻿  function inspector()
+﻿    function inspector()
     {
-      
+		var total = document.getElementById("imei").value.length;
+		if (total == 15)
+		{
 		var x = document.getElementById("imei").value;
 		
 		var i1 = Math.floor(x/100000000000000);
@@ -53,5 +55,10 @@
 		else
 		{
 		alert("錯誤的IMEI碼");
+		}
+		}
+		else
+		{
+		alert("IMEI有15碼呦~");
 		}
 	}
